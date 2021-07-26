@@ -31,6 +31,12 @@ auto.create.topics.enable=false
 ```
 ./kafka-topics.sh --create --topic test-topic -zookeeper localhost:2181 --replication-factor 1 --partitions 4
 ```
+  ## How to produce messages ?
+  kafka-console-consumer.bat --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+
+```
+./kafka-topics.sh --create --topic test-topic -zookeeper localhost:2181 --replication-factor 1 --partitions 4
+```
 
 ## How to instantiate a Console Producer?
 
